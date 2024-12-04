@@ -2,11 +2,7 @@
 name: Test
 
 'on':
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: 0 10 * * *
+    'workflow_disptach:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
