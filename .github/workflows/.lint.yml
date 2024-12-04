@@ -277,6 +277,14 @@ jobs:
         run: |
           nuget restore VeriStandZeroMQBridge.sln
           dotnet tool restore
+      - name: Install dotnet-format tool
+        run: dotnet tool install -g dotnet-format
+    
+      - name: Add dotnet tools to PATH
+        run: echo "::add-path::$(dotnet tool path)"
+    
+      - name: Verify dotnet-format installation
+        run: dotnet format --version
       - name: Lint C# (format)
         working-directory: hardware-in-the-loop/national-instruments/veristand/VeriStandZeroMQBridge
         run: |
