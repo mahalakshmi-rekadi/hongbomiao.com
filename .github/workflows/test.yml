@@ -2,7 +2,7 @@
 name: Test
 
 'on':
-    'workflow_disptach:
+    workflow_dispatch
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -12,7 +12,6 @@ jobs:
   detect-changes:
     name: Detect Changes
     runs-on: ubuntu-24.04
-    environment: test
     timeout-minutes: 10
     permissions:
       pull-requests: read
