@@ -271,7 +271,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4.1.0
         with:
-          global-json-file: hardware-in-the-loop/national-instruments/veristand/VeriStandZeroMQBridge/global.json
+          global-json-file: global.json
       - name: Install dependencies
         working-directory: hardware-in-the-loop/national-instruments/veristand/VeriStandZeroMQBridge
         run: |
@@ -280,7 +280,7 @@ jobs:
       - name: Lint C# (format)
         working-directory: hardware-in-the-loop/national-instruments/veristand/VeriStandZeroMQBridge
         run: |
-          dotnet format VeriStandZeroMQBridge.sln --verify-no-changes --verbosity diagnostic
+          dotnet format VeriStandZeroMQBridge.sln --verify-no-changes 
       - name: Lint C# (CSharpier)
         working-directory: hardware-in-the-loop/national-instruments/veristand/VeriStandZeroMQBridge
         run: |
