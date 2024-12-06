@@ -11,7 +11,7 @@ concurrency:
 jobs:
   detect-changes:
     name: Detect Changes
-    runs-on: windows-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
       pull-requests: read
