@@ -1,6 +1,10 @@
 {
   "sdk": {
+<<<<<<< HEAD
     "version": "8.0.404",
+=======
+    "version": "9.0.100",
+>>>>>>> origin/main
     "quality": "release"
   }
 }
