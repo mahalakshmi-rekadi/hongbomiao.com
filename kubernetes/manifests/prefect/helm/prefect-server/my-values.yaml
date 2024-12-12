@@ -1,5 +1,4 @@
 # https://github.com/PrefectHQ/prefect-helm/blob/main/charts/prefect-server/values.yaml
-
 ---
 server:
   image:

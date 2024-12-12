@@ -8,7 +8,7 @@ metadata:
     # use-connector-resources configures this KafkaConnect
     # to use KafkaConnector resources to avoid
     # needing to call the Connect REST API directly
-    strimzi.io/use-connector-resources: "true"
+    strimzi.io/use-connector-resources: 'true'
 spec:
   image: ghcr.io/hongbo-miao/hm-kafka-logging-kafka-connect:latest
   replicas: 1

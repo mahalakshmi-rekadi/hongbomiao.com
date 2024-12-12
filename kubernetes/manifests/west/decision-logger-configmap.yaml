@@ -7,6 +7,6 @@ metadata:
   labels:
     app.kubernetes.io/name: decision-logger
 data:
-  app_env: "production"
-  port: "41797"
-  elastic_apm_service_name: "hm-decision-logger"
+  app_env: 'production'
+  port: '41797'
+  elastic_apm_service_name: 'hm-decision-logger'

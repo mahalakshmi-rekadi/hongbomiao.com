@@ -85,8 +85,8 @@ spec:
                     limits:
                       additionalProperties:
                         anyOf:
-                        - type: integer
-                        - type: string
+                          - type: integer
+                          - type: string
                         pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
                         x-kubernetes-int-or-string: true
                       description: 'Limits describes the maximum amount of compute
@@ -95,8 +95,8 @@ spec:
                     requests:
                       additionalProperties:
                         anyOf:
-                        - type: integer
-                        - type: string
+                          - type: integer
+                          - type: string
                         pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
                         x-kubernetes-int-or-string: true
                       description: 'Requests describes the minimum amount of compute
@@ -174,8 +174,8 @@ spec:
                     limits:
                       additionalProperties:
                         anyOf:
-                        - type: integer
-                        - type: string
+                          - type: integer
+                          - type: string
                         pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
                         x-kubernetes-int-or-string: true
                       description: 'Limits describes the maximum amount of compute
@@ -184,8 +184,8 @@ spec:
                     requests:
                       additionalProperties:
                         anyOf:
-                        - type: integer
-                        - type: string
+                          - type: integer
+                          - type: string
                         pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
                         x-kubernetes-int-or-string: true
                       description: 'Requests describes the minimum amount of compute
@@ -270,8 +270,8 @@ spec:
                       should be called \"Invalid\"."
                     type: string
                 required:
-                - status
-                - type
+                  - status
+                  - type
                 type: object
               type: array
             masterReplicas:
@@ -292,13 +292,13 @@ spec:
               format: int64
               type: integer
           required:
-          - masterReplicas
-          - targetedTServerReplicas
-          - tserverReplicas
+            - masterReplicas
+            - targetedTServerReplicas
+            - tserverReplicas
           type: object
       type: object
   version: v1alpha1
   versions:
-  - name: v1alpha1
-    served: true
-    storage: true
+    - name: v1alpha1
+      served: true
+      storage: true

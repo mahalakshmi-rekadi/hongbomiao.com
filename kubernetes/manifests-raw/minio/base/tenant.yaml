@@ -9,8 +9,8 @@ metadata:
   ## Optionally pass annotations to be applied to the statefulset pods
   annotations:
     prometheus.io/path: /minio/v2/metrics/cluster
-    prometheus.io/port: "9000"
-    prometheus.io/scrape: "true"
+    prometheus.io/port: '9000'
+    prometheus.io/scrape: 'true'
 
 ## If a scheduler is specified here, Tenant pods will be dispatched by specified scheduler.
 ## If not specified, the Tenant pods will be dispatched by default scheduler.
@@ -53,7 +53,7 @@ spec:
   ## PriorityClassName indicates the Pod priority and hence importance of a Pod relative to other Pods.
   ## This is applied to MinIO pods only.
   ## Refer Kubernetes documentation for details https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/#priorityclass/
-  priorityClassName: ""
+  priorityClassName: ''
   ## Use this field to provide one or more external CA certificates. This is used by MinIO
   ## to verify TLS connections with other applications.
   ## Certificate secret files will be mounted under /tmp/certs/CAs folder, supported types:
@@ -108,9 +108,9 @@ spec:
   ## Mount path where PV will be mounted inside container(s).
   mountPath: /export
   ## Sub path inside Mount path where MinIO stores data.
-  subPath: ""
+  subPath: ''
   ## Service account to be used for all the MinIO Pods
-  serviceAccountName: ""
+  serviceAccountName: ''
   ## Specification for MinIO Pool(s) in this Tenant.
   pools:
     ## Servers specifies the number of MinIO Tenant Pods / Servers in this pool.
@@ -159,9 +159,9 @@ spec:
   requestAutoCert: true
   ## Prometheus setup for MinIO Tenant.
   prometheus:
-    image: "" # defaults to quay.io/prometheus/prometheus:latest
-    sidecarimage: "" # defaults to alpine
-    initimage: "" # defaults to busybox:1.33.1
+    image: '' # defaults to quay.io/prometheus/prometheus:latest
+    sidecarimage: '' # defaults to alpine
+    initimage: '' # defaults to busybox:1.33.1
     diskCapacityGB: 10
     storageClassName: standard
     annotations: {}
@@ -172,7 +172,7 @@ spec:
       podAffinity: {}
       podAntiAffinity: {}
     resources: {}
-    serviceAccountName: ""
+    serviceAccountName: ''
     securityContext:
       runAsUser: 1000
       runAsGroup: 1000
@@ -184,7 +184,7 @@ spec:
   #     app: minio-sm
   ## LogSearch API setup for MinIO Tenant.
   log:
-    image: "" # defaults to minio/logsearchapi:v4.2.4
+    image: '' # defaults to minio/logsearchapi:v4.2.4
     resources: {}
     nodeSelector: {}
     affinity:
@@ -198,8 +198,8 @@ spec:
       diskCapacityGB: 10
     ## Postgres setup for LogSearch API
     db:
-      image: "" # defaults to library/postgres
-      initimage: "" # defaults to busybox:1.33.1
+      image: '' # defaults to library/postgres
+      initimage: '' # defaults to busybox:1.33.1
       volumeClaimTemplate:
         metadata: {}
         spec:
@@ -218,13 +218,13 @@ spec:
       tolerations: []
       annotations: {}
       labels: {}
-      serviceAccountName: ""
+      serviceAccountName: ''
       securityContext:
         runAsUser: 999
         runAsGroup: 999
         runAsNonRoot: true
         fsGroup: 999
-    serviceAccountName: ""
+    serviceAccountName: ''
     securityContext:
       runAsUser: 1000
       runAsGroup: 1000

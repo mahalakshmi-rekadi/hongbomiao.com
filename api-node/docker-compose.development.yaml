@@ -1,5 +1,4 @@
 # https://docs.docker.com/compose/compose-file/compose-versioning
-
 ---
 services:
   # API
@@ -15,7 +14,7 @@ services:
       - /usr/src/app/api-node/node_modules/
     restart: unless-stopped
     ports:
-      - "58136:58136"
+      - '58136:58136'
     depends_on:
       - redis
       - postgres
@@ -28,7 +27,7 @@ services:
       - redis_data:/data
     restart: unless-stopped
     ports:
-      - "6379:6379"
+      - '6379:6379'
 
   # PostgreSQL
   postgres:
@@ -41,7 +40,7 @@ services:
       - ./postgres/.env.development.local.example
     restart: unless-stopped
     ports:
-      - "5432:5432"
+      - '5432:5432'
 
 # For persistence between restarts
 volumes:

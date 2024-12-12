@@ -6,7 +6,7 @@ metadata:
   namespace: hm
   labels:
     app.kubernetes.io/name: grpc
-    mirror.linkerd.io/exported: "true"
+    mirror.linkerd.io/exported: 'true'
 spec:
   type: ClusterIP
   selector:

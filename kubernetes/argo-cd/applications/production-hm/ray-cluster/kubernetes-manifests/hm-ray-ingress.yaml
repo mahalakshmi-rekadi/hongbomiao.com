@@ -8,7 +8,7 @@ metadata:
     kubernetes.io/ingress.class: traefik
     # https://doc.traefik.io/traefik/routing/providers/kubernetes-ingress/#on-ingress
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
-    traefik.ingress.kubernetes.io/router.tls: "true"
+    traefik.ingress.kubernetes.io/router.tls: 'true'
     # https://kubernetes-sigs.github.io/external-dns/latest/annotations/annotations
     external-dns.alpha.kubernetes.io/hostname: hm-ray.internal.hongbomiao.com
     # https://argo-cd.readthedocs.io/en/stable/user-guide/resource_hooks

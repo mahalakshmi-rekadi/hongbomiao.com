@@ -15,8 +15,8 @@ spec:
     tasks.max: 8
     topics: hm.motor.avro
     connection.url: jdbc:postgresql://timescale.hm-timescale.svc:5432/production_hm_iot_db
-    connection.user: "${file:/opt/kafka/external-configuration/hm-iot-db-credentials-volume/iot-db-credentials.properties:timescaledb_user}"
-    connection.password: "${file:/opt/kafka/external-configuration/hm-iot-db-credentials-volume/iot-db-credentials.properties:timescaledb_password}"
+    connection.user: '${file:/opt/kafka/external-configuration/hm-iot-db-credentials-volume/iot-db-credentials.properties:timescaledb_user}'
+    connection.password: '${file:/opt/kafka/external-configuration/hm-iot-db-credentials-volume/iot-db-credentials.properties:timescaledb_password}'
     insert.mode: insert
     batch.size: 100000
 

@@ -14,7 +14,7 @@ allowVolumeExpansion: true
 parameters:
   csi.storage.k8s.io/fstype: ext4
   type: gp3
-  encrypted: "false"
+  encrypted: 'false'
 allowedTopologies:
   - matchLabelExpressions:
       - key: topology.kubernetes.io/zone

@@ -5,7 +5,7 @@
     "first-line-h1": false,
     "line-length": false,
     "no-duplicate-heading": { "siblings_only": true },
-    "no-inline-html": false
+    "no-inline-html": false,
   },
 
   "ignores": [
@@ -153,6 +153,6 @@
     "web/.lighthouseci",
     "web/public/sitemap.xml",
     "web/storybook-static",
-    "web/tmp"
-  ]
+    "web/tmp",
+  ],
 }

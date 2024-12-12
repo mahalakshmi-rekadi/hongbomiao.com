@@ -1,7 +1,5 @@
 type Mutation {
-  updateSeed(
-    n: Int!
-  ): SeedOutput
+  updateSeed(n: Int!): SeedOutput
 }
 
 type SeedOutput {

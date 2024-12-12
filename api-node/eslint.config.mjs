@@ -132,5 +132,5 @@ export default [
       ],
     },
   },
-  prettierConfig // Make sure prettierConfig is last
+  prettierConfig, // Make sure prettierConfig is last
 ];

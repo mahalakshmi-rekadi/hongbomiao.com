@@ -3,4 +3,4 @@ project: driver_features
 registry: data/registry.db
 provider: local
 online_store:
-    path: data/online_store.db
+  path: data/online_store.db

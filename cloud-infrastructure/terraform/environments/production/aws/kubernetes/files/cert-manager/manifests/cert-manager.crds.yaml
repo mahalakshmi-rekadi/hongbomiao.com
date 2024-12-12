@@ -28,7 +28,7 @@ metadata:
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
     # Generated labels
-    app.kubernetes.io/version: "v1.15.1"
+    app.kubernetes.io/version: 'v1.15.1'
 spec:
   group: cert-manager.io
   names:
@@ -321,8 +321,8 @@ spec:
                         description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
-                          - "True"
-                          - "False"
+                          - 'True'
+                          - 'False'
                           - Unknown
                       type:
                         description: |-
@@ -358,7 +358,7 @@ metadata:
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
     # Generated labels
-    app.kubernetes.io/version: "v1.15.1"
+    app.kubernetes.io/version: 'v1.15.1'
 spec:
   group: cert-manager.io
   names:
@@ -1037,8 +1037,8 @@ spec:
                         description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
-                          - "True"
-                          - "False"
+                          - 'True'
+                          - 'False'
                           - Unknown
                       type:
                         description: Type of the condition, known values are (`Ready`, `Issuing`).
@@ -1131,7 +1131,7 @@ metadata:
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
     # Generated labels
-    app.kubernetes.io/version: "v1.15.1"
+    app.kubernetes.io/version: 'v1.15.1'
 spec:
   group: acme.cert-manager.io
   names:
@@ -2901,7 +2901,7 @@ spec:
                                               More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
                                               TODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.
                                             type: string
-                                            default: ""
+                                            default: ''
                                         x-kubernetes-map-type: atomic
                                     nodeSelector:
                                       description: |-
@@ -3087,7 +3087,7 @@ metadata:
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
     # Generated labels
-    app.kubernetes.io/version: "v1.15.1"
+    app.kubernetes.io/version: 'v1.15.1'
 spec:
   group: cert-manager.io
   names:
@@ -4964,7 +4964,7 @@ spec:
                                                     More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
                                                     TODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.
                                                   type: string
-                                                  default: ""
+                                                  default: ''
                                               x-kubernetes-map-type: atomic
                                           nodeSelector:
                                             description: |-
@@ -5487,8 +5487,8 @@ spec:
                         description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
-                          - "True"
-                          - "False"
+                          - 'True'
+                          - 'False'
                           - Unknown
                       type:
                         description: Type of the condition, known values are (`Ready`).
@@ -5515,9 +5515,9 @@ metadata:
     app: 'cert-manager'
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
-    app.kubernetes.io/component: "crds"
+    app.kubernetes.io/component: 'crds'
     # Generated labels
-    app.kubernetes.io/version: "v1.15.1"
+    app.kubernetes.io/version: 'v1.15.1'
 spec:
   group: cert-manager.io
   names:
@@ -7393,7 +7393,7 @@ spec:
                                                     More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
                                                     TODO: Drop `kubebuilder:default` when controller-gen doesn't need it https://github.com/kubernetes-sigs/kubebuilder/issues/3896.
                                                   type: string
-                                                  default: ""
+                                                  default: ''
                                               x-kubernetes-map-type: atomic
                                           nodeSelector:
                                             description: |-
@@ -7916,8 +7916,8 @@ spec:
                         description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
-                          - "True"
-                          - "False"
+                          - 'True'
+                          - 'False'
                           - Unknown
                       type:
                         description: Type of the condition, known values are (`Ready`).
@@ -7944,9 +7944,9 @@ metadata:
     app: 'cert-manager'
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
-    app.kubernetes.io/component: "crds"
+    app.kubernetes.io/component: 'crds'
     # Generated labels
-    app.kubernetes.io/version: "v1.15.1"
+    app.kubernetes.io/version: 'v1.15.1'
 spec:
   group: acme.cert-manager.io
   names:
@@ -8196,5 +8196,4 @@ spec:
                   type: string
       served: true
       storage: true
-
 # END crd

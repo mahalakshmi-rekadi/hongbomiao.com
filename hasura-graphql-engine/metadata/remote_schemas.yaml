@@ -3,13 +3,13 @@
     url: http://dgraph-dgraph-alpha.hm-dgraph.svc:8080/graphql
     timeout_seconds: 60
     forward_client_headers: true
-  comment: ""
+  comment: ''
 - name: hm-graphql-server-schema
   definition:
     url: http://graphql-server-service.hm:31800/graphql
     timeout_seconds: 60
     forward_client_headers: true
-  comment: ""
+  comment: ''
   permissions:
     - role: anonymous
       definition:

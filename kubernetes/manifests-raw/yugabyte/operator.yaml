@@ -16,7 +16,7 @@ metadata:
   name: yugabyte-operator
 rules:
   - apiGroups:
-      - ""
+      - ''
     resources:
       - pods
       - services
@@ -27,7 +27,7 @@ rules:
       - configmaps
       - secrets
     verbs:
-      - "*"
+      - '*'
   - apiGroups:
       - apps
     resources:
@@ -36,7 +36,7 @@ rules:
       - replicasets
       - statefulsets
     verbs:
-      - "*"
+      - '*'
   - apiGroups:
       - monitoring.coreos.com
     resources:
@@ -53,13 +53,13 @@ rules:
     verbs:
       - update
   - apiGroups:
-      - ""
+      - ''
     resources:
       - pods
     verbs:
       - get
   - apiGroups:
-      - ""
+      - ''
     resources:
       - pods/exec
     verbs:
@@ -73,9 +73,9 @@ rules:
   - apiGroups:
       - yugabyte.com
     resources:
-      - "*"
+      - '*'
     verbs:
-      - "*"
+      - '*'
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
@@ -116,10 +116,10 @@ spec:
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
-              value: ""
+              value: ''
             - name: POD_NAME
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
             - name: OPERATOR_NAME
-              value: "yugabyte-operator"
+              value: 'yugabyte-operator'

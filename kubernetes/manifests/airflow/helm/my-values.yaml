@@ -1,5 +1,4 @@
 # https://github.com/apache/airflow/blob/main/chart/values.yaml
-
 ---
 webserver:
   defaultUser:
@@ -18,6 +17,6 @@ dags:
     enabled: true
     repo: https://github.com/hongbo-miao/hm-airflow-dags.git
     branch: main
-    subPath: "dags"
+    subPath: 'dags'
     # interval between git sync attempts in seconds
     wait: 60

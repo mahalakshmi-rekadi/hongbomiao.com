@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "config:recommended"
-  ],
+  "extends": ["config:recommended"],
   "lockFileMaintenance": {
     "enabled": true,
     "commitMessageExtra": "({{packageFile}})"
@@ -12,47 +10,27 @@
   "packageRules": [
     {
       "description": "Group GraphQL packages",
-      "matchPackageNames": [
-        "@types/graphql-upload",
-        "graphql-http",
-        "graphql-subscriptions",
-        "graphql-upload"
-      ],
+      "matchPackageNames": ["@types/graphql-upload", "graphql-http", "graphql-subscriptions", "graphql-upload"],
       "groupName": "graphql packages"
     },
     {
       "description": "Group LangChain packages",
-      "matchPackageNames": [
-        "langchain",
-        "langchain-community",
-        "langchain-text-splitters"
-      ],
+      "matchPackageNames": ["langchain", "langchain-community", "langchain-text-splitters"],
       "groupName": "langchain packages"
     },
     {
       "description": "Group Prefect packages",
-      "matchPackageNames": [
-        "docker.io/prefecthq/prefect",
-        "prefect",
-        "prefect-aws",
-        "prefect-shell"
-      ],
+      "matchPackageNames": ["docker.io/prefecthq/prefect", "prefect", "prefect-aws", "prefect-shell"],
       "groupName": "prefect packages"
     },
     {
       "description": "Group Python packages",
-      "matchPackageNames": [
-        "docker.io/python",
-        "python"
-      ],
+      "matchPackageNames": ["docker.io/python", "python"],
       "groupName": "python packages"
     },
     {
       "description": "Group PyTorch packages",
-      "matchPackageNames": [
-        "torch",
-        "torchvision"
-      ],
+      "matchPackageNames": ["torch", "torchvision"],
       "groupName": "torch packages"
     },
     {
@@ -87,24 +65,17 @@
     },
     {
       "description": "Use custom regex versioning for Bitnami Docker images",
-      "matchPackageNames": [
-        "docker.io/bitnami/spark"
-      ],
+      "matchPackageNames": ["docker.io/bitnami/spark"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(:?-(?<compatibility>.+)(?<build>\\d+)-r(?<revision>\\d+))?$"
     },
     {
       "description": "Only allow Node.js upgrades to LTS versions",
-      "matchPackageNames": [
-        "docker.io/node",
-        "node"
-      ],
+      "matchPackageNames": ["docker.io/node", "node"],
       "allowedVersions": "/^(\\d*[02468])\\..+$/"
     },
     {
       "description": "Only allow .NET SDK upgrades to LTS versions",
-      "matchPackageNames": [
-        "dotnet-sdk"
-      ],
+      "matchPackageNames": ["dotnet-sdk"],
       "allowedVersions": "/^(\\d*[02468])\\..+$/"
     }
   ]

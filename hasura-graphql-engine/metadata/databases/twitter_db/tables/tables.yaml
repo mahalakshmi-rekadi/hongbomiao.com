@@ -1,4 +1,4 @@
-- "!include public_hashtag.yaml"
-- "!include public_tweet.yaml"
-- "!include public_tweet_hashtag.yaml"
-- "!include public_twitter_user.yaml"
+- '!include public_hashtag.yaml'
+- '!include public_tweet.yaml'
+- '!include public_tweet_hashtag.yaml'
+- '!include public_twitter_user.yaml'

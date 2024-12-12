@@ -112,9 +112,12 @@ spec:
             httpGet:
               path: /healthz
               port: hasura-engine
-          command: [
-            "/bin/sh", "-c", "rm -f /tmp/log/stdout.log && mkfifo /tmp/log/stdout.log && /bin/graphql-engine serve | tee /tmp/log/stdout.log"
-          ]
+          command:
+            [
+              '/bin/sh',
+              '-c',
+              'rm -f /tmp/log/stdout.log && mkfifo /tmp/log/stdout.log && /bin/graphql-engine serve | tee /tmp/log/stdout.log',
+            ]
           volumeMounts:
             # - name: hasura-graphql-engine-volume
             #   mountPath: /data/hasura/hasura-graphql-engine

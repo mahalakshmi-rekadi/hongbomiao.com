@@ -1,2 +1,2 @@
-- "!include public_opal_client.yaml"
-- "!include public_role.yaml"
+- '!include public_opal_client.yaml'
+- '!include public_role.yaml'

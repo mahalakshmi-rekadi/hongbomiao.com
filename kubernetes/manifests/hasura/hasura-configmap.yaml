@@ -8,23 +8,23 @@ metadata:
     app.kubernetes.io/name: hasura
 data:
   # hasura-graphql-engine
-  hasura_graphql_metadata_database_url: "postgresql://admin:passw0rd@postgres-service.hm-postgres.svc:5432/hasura_db"
-  hasura_graphql_opa_db_url: "postgresql://admin:passw0rd@postgres-service.hm-postgres.svc:5432/opa_db"
-  hasura_graphql_twitter_db_url: "postgresql://admin:passw0rd@timescale.hm-timescale.svc:5432/twitter_db"
-  hasura_graphql_server_port: "16020"
-  hasura_graphql_admin_secret: "passw0rd"
-  hasura_graphql_unauthorized_role: "anonymous"
-  hasura_graphql_enable_allowlist: "true"
-  hasura_graphql_enable_remote_schema_permissions: "true"
-  hasura_graphql_enabled_log_types: "startup, http-log, webhook-log, websocket-log, query-log"
-  hasura_graphql_log_level: "info"
-  hasura_graphql_enable_console: "true"
-  hasura_graphql_dev_mode: "true"
-  hasura_graphql_enable_telemetry: "false"
-  hasura_graphql_migrations_dir: "/data/hasura/hasura-graphql-engine/migrations"
-  hasura_graphql_metadata_dir: "/data/hasura/hasura-graphql-engine/metadata"
+  hasura_graphql_metadata_database_url: 'postgresql://admin:passw0rd@postgres-service.hm-postgres.svc:5432/hasura_db'
+  hasura_graphql_opa_db_url: 'postgresql://admin:passw0rd@postgres-service.hm-postgres.svc:5432/opa_db'
+  hasura_graphql_twitter_db_url: 'postgresql://admin:passw0rd@timescale.hm-timescale.svc:5432/twitter_db'
+  hasura_graphql_server_port: '16020'
+  hasura_graphql_admin_secret: 'passw0rd'
+  hasura_graphql_unauthorized_role: 'anonymous'
+  hasura_graphql_enable_allowlist: 'true'
+  hasura_graphql_enable_remote_schema_permissions: 'true'
+  hasura_graphql_enabled_log_types: 'startup, http-log, webhook-log, websocket-log, query-log'
+  hasura_graphql_log_level: 'info'
+  hasura_graphql_enable_console: 'true'
+  hasura_graphql_dev_mode: 'true'
+  hasura_graphql_enable_telemetry: 'false'
+  hasura_graphql_migrations_dir: '/data/hasura/hasura-graphql-engine/migrations'
+  hasura_graphql_metadata_dir: '/data/hasura/hasura-graphql-engine/metadata'
 
   # hasura-metric-adapter
-  log_file: "/tmp/log/stdout.log"
-  listen_addr: "localhost:16021"
-  hasura_graphql_endpoint: "http://localhost:16020"
+  log_file: '/tmp/log/stdout.log'
+  listen_addr: 'localhost:16021'
+  hasura_graphql_endpoint: 'http://localhost:16020'

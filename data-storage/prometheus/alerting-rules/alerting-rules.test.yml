@@ -16,5 +16,5 @@ tests:
               instance: localhost:9090
               job: prometheus
             exp_annotations:
-              summary: "Instance localhost:9090 down"
-              description: "localhost:9090 of job prometheus has been down for more than 10 seconds."
+              summary: 'Instance localhost:9090 down'
+              description: 'localhost:9090 of job prometheus has been down for more than 10 seconds.'

@@ -35,7 +35,7 @@ const app = express()
   .use('/graphql', graphQLUploadMiddleware, graphQLMiddleware)
   .use('/api', apiRouter)
   .use(redirectToIndexRouter);
-Sentry.setupExpressErrorHandler(app) // Must be after all routes and before any and other error-handling middlewares
-app.use(handleError)
+Sentry.setupExpressErrorHandler(app); // Must be after all routes and before any and other error-handling middlewares
+app.use(handleError);
 
 export default app;

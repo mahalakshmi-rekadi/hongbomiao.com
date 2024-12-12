@@ -1,15 +1,12 @@
 # https://github.com/bitnami/charts/blob/main/bitnami/spark/values.yaml
-
 ---
 image:
   registry: docker.io
   repository: bitnami/spark
   tag: 3.4.0-debian-11-r1
 master:
-  configOptions:
-    -Dspark.ui.reverseProxy=true
+  configOptions: -Dspark.ui.reverseProxy=true
     -Dspark.ui.reverseProxyUrl=https://spark.hongbomiao.com
 worker:
-  configOptions:
-    -Dspark.ui.reverseProxy=true
+  configOptions: -Dspark.ui.reverseProxy=true
     -Dspark.ui.reverseProxyUrl=https://spark.hongbomiao.com

@@ -7,9 +7,9 @@ metadata:
   labels:
     app.kubernetes.io/name: elastic-apm
 data:
-  elastic_apm_server_url: "https://hm-apm-apm-http.hm-elastic.svc:8200"
-  elastic_apm_environment: "production"
-  elastic_apm_verify_server_cert: "true"
-  elastic_apm_server_cert: "/data/elastic-apm/tls.crt"
-  elastic_apm_log_level: "error"  # "debug"
-  elastic_apm_log_file: "stderr"  # "stdout"
+  elastic_apm_server_url: 'https://hm-apm-apm-http.hm-elastic.svc:8200'
+  elastic_apm_environment: 'production'
+  elastic_apm_verify_server_cert: 'true'
+  elastic_apm_server_cert: '/data/elastic-apm/tls.crt'
+  elastic_apm_log_level: 'error' # "debug"
+  elastic_apm_log_file: 'stderr' # "stdout"

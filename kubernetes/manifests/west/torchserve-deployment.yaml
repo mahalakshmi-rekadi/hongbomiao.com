@@ -1,5 +1,4 @@
 # https://github.com/pytorch/serve/blob/master/kubernetes/Helm/templates/torchserve.yaml
-
 ---
 kind: Deployment
 apiVersion: apps/v1
@@ -23,7 +22,7 @@ spec:
         - name: torchserve
           # image: docker.io/pytorch/torchserve:0.4.2-gpu
           image: docker.io/pytorch/torchserve:0.4.2-cpu
-          args: ["torchserve", "--start", "--ts-config", "/data/model-server/config/config.properties"]
+          args: ['torchserve', '--start', '--ts-config', '/data/model-server/config/config.properties']
           ports:
             - name: inference
               protocol: TCP
@@ -45,11 +44,11 @@ spec:
               mountPath: /data/model-server
           resources:
             limits:
-              cpu: "1"
+              cpu: '1'
               memory: 4Gi
-              nvidia.com/gpu: "0"
+              nvidia.com/gpu: '0'
             requests:
-              cpu: "1"
+              cpu: '1'
               memory: 1Gi
       volumes:
         - name: model-server-volume

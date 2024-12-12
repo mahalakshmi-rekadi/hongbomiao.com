@@ -22,18 +22,18 @@
         pyenv_version: v2.3.23
         pyenv_env: user
         pyenv_python_versions:
-          - "{{ python_version }}"
+          - '{{ python_version }}'
         pyenv_global:
-          - "{{ python_version }}"
+          - '{{ python_version }}'
   tasks:
     - name: Creates directory ~/pyenv/
       ansible.builtin.file:
-        path: "{{ ansible_env.HOME }}/pyenv/"
+        path: '{{ ansible_env.HOME }}/pyenv/'
         state: directory
     - name: Set global Python version
       ansible.builtin.copy:
-        dest: "{{ ansible_env.HOME }}/pyenv/version"
-        content: "{{ python_version }}"
+        dest: '{{ ansible_env.HOME }}/pyenv/version'
+        content: '{{ python_version }}'
         mode: 0644
 
 - name: Install Poetry
@@ -50,10 +50,10 @@
       vars:
         # https://github.com/stefangweichinger/ansible-rclone/blob/main/defaults/main.yml
         rclone_arch: arm64
-        rclone_config_location: "{{ ansible_env.HOME }}/.config/rclone/rclone.conf"
+        rclone_config_location: '{{ ansible_env.HOME }}/.config/rclone/rclone.conf'
         rclone_config_owner:
-          OWNER: "{{ ansible_env.USER }}"
-          GROUP: "{{ ansible_env.USER }}"
+          OWNER: '{{ ansible_env.USER }}'
+          GROUP: '{{ ansible_env.USER }}'
         rclone_configs:
           - name: hm-s3
             properties:
@@ -83,7 +83,7 @@
     - name: Install packages from pip
       ansible.builtin.pip:
         name: prefect==2.11.3
-        executable: "{{ ansible_env.HOME }}/pyenv/shims/pip"
+        executable: '{{ ansible_env.HOME }}/pyenv/shims/pip'
       register: pip_package
     - name: Create systemd service file
       become: true
@@ -98,7 +98,7 @@
         name: prefect-agent
         state: "{{ 'restarted' if pip_package.changed or systemd_unit.changed else 'started' }}"
         enabled: true
-        daemon_reload: "{{ systemd_unit.changed }}"
+        daemon_reload: '{{ systemd_unit.changed }}'
 
 - name: Install Kafka
   hosts: hm-ubuntu

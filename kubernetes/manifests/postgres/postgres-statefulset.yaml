@@ -41,7 +41,7 @@ spec:
                 configMapKeyRef:
                   name: postgres-configmap
                   key: postgres_password
-          args: ["-c", "wal_level=logical"]
+          args: ['-c', 'wal_level=logical']
           ports:
             - name: postgres
               protocol: TCP
@@ -53,7 +53,7 @@ spec:
     - metadata:
         name: postgres-volume
       spec:
-        accessModes: ["ReadWriteOnce"]
+        accessModes: ['ReadWriteOnce']
         resources:
           requests:
             storage: 1Gi

@@ -21,7 +21,7 @@ spec:
           image: ghcr.io/hongbo-miao/hm-alpine:latest
           command:
             - sleep
-            - "31536000"
+            - '31536000'
           volumeMounts:
             - name: hm-alpine-volume
               mountPath: /data/alpine

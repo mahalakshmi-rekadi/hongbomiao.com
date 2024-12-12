@@ -1,4 +1,3 @@
-
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -625,7 +624,7 @@ spec:
                       enum:
                         - inline
                         - external
-                      description: 'Logging type, must be either ''inline'' or ''external''.'
+                      description: "Logging type, must be either 'inline' or 'external'."
                     valueFrom:
                       type: object
                       properties:
@@ -643,7 +642,7 @@ spec:
                             configuration.
                       description: >-
                         `ConfigMap` entry where the logging configuration is
-                        stored. 
+                        stored.
                   required:
                     - type
                   description: Logging configuration for Kafka Connect.
@@ -2487,7 +2486,7 @@ spec:
                                     while building the new container. If not
                                     specified, the downloaded artifact will not
                                     be verified. Not applicable to the `maven`
-                                    artifact type. 
+                                    artifact type.
                                 type:
                                   type: string
                                   enum:
@@ -3366,7 +3365,7 @@ spec:
                       enum:
                         - inline
                         - external
-                      description: 'Logging type, must be either ''inline'' or ''external''.'
+                      description: "Logging type, must be either 'inline' or 'external'."
                     valueFrom:
                       type: object
                       properties:
@@ -3384,7 +3383,7 @@ spec:
                             configuration.
                       description: >-
                         `ConfigMap` entry where the logging configuration is
-                        stored. 
+                        stored.
                   required:
                     - type
                   description: Logging configuration for Kafka Bridge.
@@ -5093,7 +5092,7 @@ spec:
                       enum:
                         - inline
                         - external
-                      description: 'Logging type, must be either ''inline'' or ''external''.'
+                      description: "Logging type, must be either 'inline' or 'external'."
                     valueFrom:
                       type: object
                       properties:
@@ -5111,7 +5110,7 @@ spec:
                             configuration.
                       description: >-
                         `ConfigMap` entry where the logging configuration is
-                        stored. 
+                        stored.
                   required:
                     - type
                   description: Logging configuration for MirrorMaker.
@@ -7016,7 +7015,7 @@ spec:
                       enum:
                         - inline
                         - external
-                      description: 'Logging type, must be either ''inline'' or ''external''.'
+                      description: "Logging type, must be either 'inline' or 'external'."
                     valueFrom:
                       type: object
                       properties:
@@ -7034,7 +7033,7 @@ spec:
                             configuration.
                       description: >-
                         `ConfigMap` entry where the logging configuration is
-                        stored. 
+                        stored.
                   required:
                     - type
                   description: Logging configuration for Kafka Connect.
@@ -9361,7 +9360,7 @@ spec:
                                   URI of the User Info Endpoint to use as a
                                   fallback to obtaining the user id when the
                                   Introspection Endpoint does not return
-                                  information that can be used for the user id. 
+                                  information that can be used for the user id.
                               userNameClaim:
                                 type: string
                                 description: >-
@@ -10305,7 +10304,7 @@ spec:
                           enum:
                             - inline
                             - external
-                          description: 'Logging type, must be either ''inline'' or ''external''.'
+                          description: "Logging type, must be either 'inline' or 'external'."
                         valueFrom:
                           type: object
                           properties:
@@ -10323,7 +10322,7 @@ spec:
                                 the configuration.
                           description: >-
                             `ConfigMap` entry where the logging configuration is
-                            stored. 
+                            stored.
                       required:
                         - type
                       description: Logging configuration for Kafka.
@@ -11750,7 +11749,7 @@ spec:
                           enum:
                             - inline
                             - external
-                          description: 'Logging type, must be either ''inline'' or ''external''.'
+                          description: "Logging type, must be either 'inline' or 'external'."
                         valueFrom:
                           type: object
                           properties:
@@ -11768,7 +11767,7 @@ spec:
                                 the configuration.
                           description: >-
                             `ConfigMap` entry where the logging configuration is
-                            stored. 
+                            stored.
                       required:
                         - type
                       description: Logging configuration for ZooKeeper.
@@ -12821,7 +12820,7 @@ spec:
                                     containing the configuration.
                               description: >-
                                 `ConfigMap` entry where the logging
-                                configuration is stored. 
+                                configuration is stored.
                           required:
                             - type
                           description: Logging configuration.
@@ -13001,7 +13000,7 @@ spec:
                                     containing the configuration.
                               description: >-
                                 `ConfigMap` entry where the logging
-                                configuration is stored. 
+                                configuration is stored.
                           required:
                             - type
                           description: Logging configuration.
@@ -14360,7 +14359,7 @@ spec:
                           enum:
                             - inline
                             - external
-                          description: 'Logging type, must be either ''inline'' or ''external''.'
+                          description: "Logging type, must be either 'inline' or 'external'."
                         valueFrom:
                           type: object
                           properties:
@@ -14378,7 +14377,7 @@ spec:
                                 the configuration.
                           description: >-
                             `ConfigMap` entry where the logging configuration is
-                            stored. 
+                            stored.
                       required:
                         - type
                       description: Logging configuration (Log4j 2) for Cruise Control.

@@ -7,7 +7,7 @@ metadata:
   labels:
     k8s-app: fluent-bit-logging
     version: v1
-    kubernetes.io/cluster-service: "true"
+    kubernetes.io/cluster-service: 'true'
 spec:
   selector:
     matchLabels:
@@ -17,10 +17,10 @@ spec:
       labels:
         k8s-app: fluent-bit-logging
         version: v1
-        kubernetes.io/cluster-service: "true"
+        kubernetes.io/cluster-service: 'true'
       annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "2020"
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '2020'
         prometheus.io/path: /api/v1/metrics/prometheus
     spec:
       containers:
@@ -31,9 +31,9 @@ spec:
             - containerPort: 2020
           env:
             - name: FLUENT_ELASTICSEARCH_HOST
-              value: "hm-elasticsearch-es-http.elastic"
+              value: 'hm-elasticsearch-es-http.elastic'
             - name: FLUENT_ELASTICSEARCH_PORT
-              value: "9200"
+              value: '9200'
           volumeMounts:
             - name: varlog
               mountPath: /var/log
@@ -58,7 +58,7 @@ spec:
         - key: node-role.kubernetes.io/master
           operator: Exists
           effect: NoSchedule
-        - operator: "Exists"
-          effect: "NoExecute"
-        - operator: "Exists"
-          effect: "NoSchedule"
+        - operator: 'Exists'
+          effect: 'NoExecute'
+        - operator: 'Exists'
+          effect: 'NoSchedule'

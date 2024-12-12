@@ -29,7 +29,7 @@ spec:
         memory: 512Mi
     gflags:
       - key: default_memory_limit_to_ram_ratio
-        value: "0.85"
+        value: '0.85'
 
   tserver:
     replicas: 3
@@ -53,4 +53,4 @@ spec:
         memory: 512Mi
     gflags:
       - key: default_memory_limit_to_ram_ratio
-        value: "0.85"
+        value: '0.85'

@@ -1,5 +1,4 @@
 # https://github.com/yugabyte/yugabyte-operator/blob/master/deploy/crds/yugabyte.com_v1alpha1_ybcluster_full_cr.yaml
-
 ---
 apiVersion: yugabyte.com/v1alpha1
 kind: YBCluster
@@ -32,11 +31,11 @@ spec:
         memory: 512Mi
     gflags:
       - key: default_memory_limit_to_ram_ratio
-        value: "0.85"
+        value: '0.85'
       - key: webserver_interface
-        value: "0.0.0.0"
+        value: '0.0.0.0'
       - key: pgsql_proxy_bind_address
-        value: "0.0.0.0"
+        value: '0.0.0.0'
   tserver:
     replicas: 3
     tserverUIPort: 9000
@@ -59,6 +58,6 @@ spec:
         memory: 512Mi
     gflags:
       - key: default_memory_limit_to_ram_ratio
-        value: "0.85"
+        value: '0.85'
       - key: webserver_interface
-        value: "0.0.0.0"
+        value: '0.0.0.0'
